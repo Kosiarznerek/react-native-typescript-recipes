@@ -1,0 +1,7 @@
+node_modules/**/*
+.expo/*
+.idea/*
+**/*.js
+npm-debug.*
+PIXABAY_API_KEY.ts
+IXABAY_API_KEY.js

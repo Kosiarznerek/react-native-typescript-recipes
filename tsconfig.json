@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2017",
+    "sourceMap": false,
+    "allowJs": true,
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "ES2017"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules",
+    ".expo"
+  ]
+}
