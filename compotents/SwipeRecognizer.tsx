@@ -31,10 +31,10 @@ const swipeConfig: ISwipeConfig = {
 
 //Properties interface
 interface IProps {
-    onSwipe: (direction: swipeDirections, gestState: PanResponderGestureState) => any,
+    onSwipe?: (direction: swipeDirections, gestState: PanResponderGestureState) => any,
     onSwipeLeft?: (gestState: PanResponderGestureState) => any,
     onSwipeRight?: (gestState: PanResponderGestureState) => any,
-    config: ISwipeConfig
+    config?: ISwipeConfig
 }
 
 //SwipeRecognizer class
