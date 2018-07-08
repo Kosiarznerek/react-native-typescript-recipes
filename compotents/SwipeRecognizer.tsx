@@ -40,16 +40,16 @@ interface IProps {
 //SwipeRecognizer class
 export default class SwipeRecognizer extends React.Component<IProps> {
 
-    private swipeConfig: ISwipeConfig;
+    private _swipeConfig: ISwipeConfig;
     private _panResponder: PanResponderInstance;
 
     constructor(props: IProps) {
         super(props);
-        this.swipeConfig = Object.assign(swipeConfig, props.config);
+        this._swipeConfig = Object.assign(swipeConfig, props.config);
     }
 
     componentWillReceiveProps(props: IProps) {
-        this.swipeConfig = Object.assign(swipeConfig, props.config);
+        this._swipeConfig = Object.assign(swipeConfig, props.config);
     }
 
     componentWillMount() {
@@ -153,7 +153,7 @@ export default class SwipeRecognizer extends React.Component<IProps> {
      */
     private _isValidHorizontalSwipe(gestureState: PanResponderGestureState): boolean {
         const {vx, dy} = gestureState;
-        const {velocityThreshold, directionalOffsetThreshold} = this.swipeConfig;
+        const {velocityThreshold, directionalOffsetThreshold} = this._swipeConfig;
         return this._isValidSwipe(vx, velocityThreshold, dy, directionalOffsetThreshold);
     }
 
