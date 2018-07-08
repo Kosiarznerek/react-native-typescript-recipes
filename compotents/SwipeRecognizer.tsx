@@ -1,6 +1,5 @@
 /**
- * Based on
- * https://github.com/glepur/react-native-swipe-gestures
+ * Based on https://github.com/glepur/react-native-swipe-gestures
  * Had to be changed because of scrollView / listView problem
  */
 
